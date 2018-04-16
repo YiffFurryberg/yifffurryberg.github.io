@@ -1,0 +1,2 @@
+# zuckerborg
+A discord bot
