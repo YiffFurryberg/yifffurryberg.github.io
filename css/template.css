@@ -1,0 +1,43 @@
+/* Page Template CSS */
+/* Welcome Content */
+#welcome-message {
+	width: 70%;
+	float: left;
+}
+#welcome-image {
+	padding: 5px;
+	width: 18%;
+	border-radius: 50%;
+	float: right;
+	margin-right: 5%;
+}
+#welcome-person, #welcome-person-bot {
+	float: left;
+	display: inline;
+	width: 50%;
+	text-align: center;
+	margin-top: 5px;
+}
+#welcome-person-image {
+	width: 25%;
+	border-radius: 50%;
+}
+#welcome-person-bot {float: right;}
+@media screen and (max-width: 1024px) {
+	/* Welcome Content */
+	#welcome-message {
+		width: 100%;
+		float: none;
+	}
+	#welcome-image {
+		float: none;
+		display: block;
+		margin: auto;
+		width: 25%;
+	}
+	#welcome-person, #welcome-person-bot {
+		float: none;
+		display: block;
+		width: 100%;
+	}
+}
