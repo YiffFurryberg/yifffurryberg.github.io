@@ -1,106 +1,43 @@
-/* Homepage CSS */
-/* Globals */
-* {
-	padding: 0;
-	margin: 0;
+/* Page Template CSS */
+/* Welcome Content */
+#welcome-message {
+	width: 70%;
+	float: left;
 }
-body {
-	font: 15px/1.5 "Roboto",Arial;
-	background-color: #f4f4f4;
+#welcome-image {
+	padding: 5px;
+	width: 18%;
+	border-radius: 50%;
+	float: right;
+	margin-right: 5%;
 }
-.container {
-	width: 98%;
-	display: block;
-	margin: auto;
-}
-a {
-	color: #3b5998;
-	text-decoration: none;
-}
-a:hover, a:focus {color: #25385e;}
-/* Header */
-header {
-	width: 100%;
-	min-height: 50px;
-	padding-top: 2px;
-	background-color: #3b5998;
-    overflow: auto;
-}
-header a, footer a {color: white;}
-header a:hover, header a:focus, footer a:hover, footer a:focus {color: white;}
-nav li:hover {background-color: #25385e;}
-nav li a {display: block;}
-#branding, header nav {
+#welcome-person, #welcome-person-bot {
 	float: left;
 	display: inline;
-	line-height: 50px;
-}
-header nav {float: right;}
-nav li {
-	display: inline-block;
-	padding: 0 6px;
+	width: 50%;
 	text-align: center;
-	font-size: 16px;
+	margin-top: 5px;
 }
-/* Content */
-#content {
-	width: 100%;
-	min-height: calc(100vh - 52px);
+#welcome-person-image {
+	width: 25%;
+	border-radius: 50%;
 }
-/* Content Box */
-.content-box {
-	min-height: 50px;
-	width: 60%;
-	background-color: white;
-	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-	display: block;
-	margin: 10px auto;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 2px;
-	overflow: hidden;
-}
-.content-box-title {
-	width: 60%;
-	text-align: center;
-	display: block;
-	margin: auto;
-	font-size: 18px;
-	border-bottom: 1px solid black;
-}
-/* Footer */
-footer {
-	width: 100%;
-	min-height: 30px;
-	padding-top: 2px;
-	background-color: #3b5998;
-	border-top: 1px solid #25385e;
-	text-align: center;
-}
-footer p {
-	color: white;
-	font-size: 16px;
-}
-footer span {
-	font-size: 10px;
-	color: white;
-}
-/* Media Queries */
+#welcome-person-bot {float: right;}
 @media screen and (max-width: 1024px) {
-	/* Header */
-	#branding, header nav {
+	/* Welcome Content */
+	#welcome-message {
+		width: 100%;
+		float: none;
+	}
+	#welcome-image {
+		float: none;
+		display: block;
+		margin: auto;
+		width: 25%;
+	}
+	#welcome-person, #welcome-person-bot {
 		float: none;
 		display: block;
 		width: 100%;
-		text-align: center;
 	}
-	nav li {
-		float: none;
-	}
-	/* Content */
-	#content {
-		min-height: calc(100vh - 102px);
-	}
-	.content-box {width: 95%;}
 }
