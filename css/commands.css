@@ -1,7 +1,7 @@
 /* Commands Page CSS */
 /* Commands Content */
 code {
-    background: #2f3136;
+	background: #2f3136;
     border-radius: 3px;
     font-family: Consolas,Liberation Mono,Menlo,Courier,monospace;
     font-size: 85%;
@@ -10,4 +10,21 @@ code {
     padding: .2em;
     text-indent: 0;
     width: auto;
+}
+#commands-section-header {
+	font-size: 20px;
+	width: 30%;
+	border-bottom: 1px solid black;
+	padding-left: 5px;
+}
+#commands-list {
+	padding-left: 10px;
+	list-style: none;
+}
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+	/* Commands Content */
+	#commands-section-header {
+		width: 50%;
+	}
 }
